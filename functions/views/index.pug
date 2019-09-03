@@ -1,4 +1,6 @@
 extends templates/layout.pug
+block styles
+    link(rel="stylesheet", href="css/home.css")
 block content
     div(class="home-carousel")
         div
@@ -54,3 +56,4 @@ block content
         div(class="contact-box")
             iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3882.882042294901!2d-72.12925064971394!3d-13.295308269952297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916ddd390d1b48f1%3A0x2d7c579b0d85c00a!2sColegio+Los+Andes+School!5e0!3m2!1sen!2spe!4v1544644744581", frameborder="0")
     script(src="js/home.js")
+    include templates/footer.pug

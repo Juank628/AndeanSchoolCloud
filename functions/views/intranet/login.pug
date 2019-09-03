@@ -1,0 +1,19 @@
+extends ../templates/layout.pug
+block styles
+    link(rel="stylesheet", href="css/intranet/login.css")
+block content
+    div(class="container")
+        div(class="login-box")
+            h1(class="h1-black") Login
+            form(action="POST")
+                div
+                    label(class="p-black") email:
+                        input(type="text" placeholder="email")
+                div
+                    label(class="p-black") password:
+                        input(type="password" placeholder="password")
+                div(class="buttons-box")
+                    button(class="button" type="submit") Ingresar
+                    button(class="button-secondary" type="button") Cancelar
+
+                
